@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>WATER BILLING PROCESS</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body >
+<marquee scrollamount="30" style="text-transform: uppercase; font-size: larger; font-weight: 400; color: red; text-shadow: 2px 2px 4px rgba(red, green, blue, alpha); background-color:aquamarine; width: 80%; margin-left: 20%;">User infomation document</marquee>
+<form action="process.form.php" method ="post">
+    <!--below is the section of firstname and last name-->
+    <div id="firstsecond" style="height: 100%; border-style: double; margin-left: 5%; background-color: aqua; border-radius: 4%; border-color: brown; padding-left: 2%; padding-bottom: 2%; margin-right: 50%; ">
+        <h1 style="color: darkorange; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">ENTER YOUR PERSONNAL DETAILS HERE</h1>
+        <hr>
+        <hr>
+        <label for="first name" style="color: darkgreen; text-transform: uppercase; font-weight: 300; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;" >first name:</label>
+	<input type="text"id  name="first name">
+	<label for="second name" style="color: darkgreen;font-weight: 300; text-transform: uppercase; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;" ">second name</label>
+	<input type="text" name="second name"><br>
+	
+    </div>
+    <br>
+    <br>
+    <!--style the amount and date to be on the same div-->
+
+    <div id="amountdate" style="border-style: groove; border-radius: 4%; background-color: aqua; margin-right: 50%;padding-bottom: 2%; padding-left: 2%; margin-left: 5%;">
+        <h1 style="color: darkorange; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"> ENTER YOUR AMOUNT,DATE OF PAYMENT</h1>
+        <hr>
+        <hr>
+        <label for="amount" style="color: darkgreen;font-weight: 300; text-transform: uppercase; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;" ">amount</label>
+	    <input type="amount" placeholder="ksh 1200" name="amount">
+        <label for="date" style="color: darkgreen; font-weight: 300; text-transform: uppercase; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;" ">date</label>
+        <input type="date" name="date">
+    </div>
+<br>
+<br>
+
+<div id="payments" style="background-color: aqua; border-style: groove; border-radius: 4%;padding-bottom: 2%; margin-left: 5%; margin-right: 50%; padding-left: 2%;">
+    <h1 style=" text-transform: uppercase; color: darkorange; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">method of payment you prefer</h1>
+    <hr>
+    <hr>
+	<label for="payment" style="font-weight: 300;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">m-pesa</label>
+	<input type="radio" name="payment">
+	
+	<label for="payment" style= "font-weight: 300;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"> bank </label>
+	<input type="radio" name="payment">
+</div>   
+
+</form>
+
+	
+</div>
+</body>
+</html>
